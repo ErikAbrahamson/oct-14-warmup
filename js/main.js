@@ -6,3 +6,7 @@ function missing(array) {
   }
   return int;
 }
+
+// functional programming alternative
+var funcMissing = array.filter(function(num, i) {
+  return array[i + 1] - num > 1; }).map(function(num) { return num + 1; });
